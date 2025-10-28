@@ -11,3 +11,7 @@
 .text-background-yellow{
     background-color: yellow;
 }
+
+body{
+    background-image: url{"../assets/happyman.jpg"};
+}
