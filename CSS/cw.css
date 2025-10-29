@@ -6,6 +6,7 @@
 .text-pink{
     color:rgb(253, 141, 215);
     background-color: blanchedalmond;
+    text-shadow: 2px 2px 5px rgb(85, 50, 255);
 }
 
 .text-background-yellow{
