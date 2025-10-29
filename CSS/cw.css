@@ -17,3 +17,13 @@ body{
     background-size: 35%;
     background-attachment: fixed;
 }
+
+.text-orange{
+    color:rgb(240, 146, 52);
+    background-color: rgb(237, 255, 215);
+}
+
+.text-para{
+    font-size: 1.8rem
+    text-align: justify;
+}
