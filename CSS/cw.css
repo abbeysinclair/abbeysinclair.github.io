@@ -26,4 +26,5 @@ body{
 .text-para{
     font-size: 4.2rem
     text-align: justify;
+    text-decoration-style: wavy;
 }
