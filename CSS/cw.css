@@ -2,6 +2,8 @@
     color:green;
     background-color:aquamarine;
     font-family: "stack sans notch", "Lucida Handwriting", cursive;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 .text-pink{
