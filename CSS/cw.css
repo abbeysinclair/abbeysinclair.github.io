@@ -39,6 +39,7 @@ a{
     color: rgb(226, 43, 73);
     text-decoration: none;
     background-color: #78c52079;
+    padding; 20px 10px 20px 10px; 
 }
 a:hover{
     color: rgb(214, 122, 189);
