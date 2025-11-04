@@ -1,6 +1,7 @@
 #heading1{
     color:green;
     background-color:aquamarine;
+    font-family: "stack sans notch"
 }
 
 .text-pink{
@@ -29,6 +30,5 @@ body{
     text-align: justify;
     text-decoration-line: overline;
     text-decoration-style: wavy;
-    font-family: "stack sans notch"
 
 }
