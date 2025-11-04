@@ -41,3 +41,9 @@ a{
 a:hover{
     color: rgb(214, 122, 189);
 }
+a:visited{
+    color: rgb(123, 255, 0);
+}
+a:active{
+    color:rgb(116, 16, 16)
+}
