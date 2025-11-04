@@ -38,3 +38,6 @@ body{
 a{
     color: blueviolet;
 }
+a:hover{
+    color: rgb(214, 122, 189);
+}
