@@ -1,3 +1,9 @@
+:root {
+    --primary-red: rgb(218, 42, 45);
+    --just-red: rgb(198, 95, 97);
+}
+
+
 #heading1{
     color:green;
     background-color:aquamarine;
@@ -9,7 +15,7 @@
 }
 
 .text-pink{
-    color:rgb(253, 141, 215);
+    color:rgb(204, 102, 222);
     background-color: blanchedalmond;
     text-shadow: 10px 10px 15px rgb(17, 8, 63);
 }
@@ -53,4 +59,10 @@ a:visited{
 }
 a:active{
     color:rgb(116, 16, 16)
+}
+
+@media (max-width: 576px)  {
+    body {
+        background-color: lightcyan;
+    }
 }
