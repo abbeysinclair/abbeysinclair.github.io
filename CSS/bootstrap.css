@@ -1,3 +1,8 @@
 .btn-primary{
     background-color: rgb(244, 208, 6);
+    border-color: black
+}
+.btn-primary:hover{
+    background-color: brown;
+    border-color: blue;
 }
