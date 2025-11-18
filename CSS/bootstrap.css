@@ -1,8 +1,11 @@
-.btn-primary{
-    background-color: rgb(244, 208, 6);
-    border-color: black
-}
-.btn-primary:hover{
-    background-color: brown;
-    border-color: blue;
-}
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar bg-primary" data-bs-theme="dark">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar" style="background-color: #e3f2fd;" data-bs-theme="light">
+  <!-- Navbar content -->
+</nav>
