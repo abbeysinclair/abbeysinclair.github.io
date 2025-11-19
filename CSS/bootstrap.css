@@ -1,5 +1,5 @@
-.text-pink{
-    color:rgb(204, 102, 222);
-    background-color: blanchedalmond;
-    text-shadow: 10px 10px 15px rgb(17, 8, 63);
-}
+your-project/
+    index.html
+    css/
+        bootstrap.css     ← replace your old one with this
+        (your old text-pink CSS can go in its own file)
