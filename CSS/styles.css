@@ -1,0 +1,38 @@
+/* General section styling */
+.section {
+  scroll-margin-top: 70px; /* offset for navbar links */
+  padding: 3rem 1rem;
+}
+
+/* Navbar customization */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+
+/* About Me picture */
+#about img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Custom text highlight */
+.text-pink {
+  color: rgb(204, 102, 222);
+  background-color: blanchedalmond;
+  text-shadow: 10px 10px 15px rgb(17, 8, 63);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
