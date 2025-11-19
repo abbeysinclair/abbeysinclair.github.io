@@ -48,3 +48,40 @@
 .navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* navbar-toggler-icon-bg */
 }
+/* Navbar background */
+.navbar {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  padding: 0.5rem 1rem;
+}
+
+/* Navbar brand */
+.navbar .navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+/* Navbar links */
+.navbar .nav-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.navbar .nav-link:hover {
+  color: #ffc107; /* yellow/orange highlight on hover */
+}
+
+/* Active link styling */
+.navbar .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Optional: spacing between brand and links */
+.navbar-nav {
+  margin-left: 2rem;
+}
