@@ -1,87 +1,37 @@
-/* Navbar base */
+/* General section styling */
+.section {
+  scroll-margin-top: 70px; /* offset for navbar links */
+}
+
+/* Navbar customization */
 .navbar {
-    padding-left: 1rem;     /* example of navbar-padding-x */
-    padding-right: 1rem;
-    padding-top: 0.5rem;    /* example of navbar-padding-y */
-    padding-bottom: 0.5rem;
-    color: rgba(0, 0, 0, 0.55);   /* navbar-color */
-}
-
-/* Navbar links */
-.navbar .nav-link {
-    color: rgba(0, 0, 0, 0.55);           /* navbar-color */
-    padding-left: 0.5rem;                 /* navbar-nav-link-padding-x */
-    padding-right: 0.5rem;
-    transition: color 0.15s ease-in-out;  /* navbar-toggler-transition */
-}
-
-.navbar .nav-link:hover {
-    color: rgba(0, 0, 0, 0.7);  /* navbar-hover-color */
-}
-
-.navbar .nav-link:disabled {
-    color: rgba(0, 0, 0, 0.3);  /* navbar-disabled-color */
-}
-
-/* Navbar brand */
-.navbar .navbar-brand {
-    padding-top: 0.3125rem;          /* navbar-brand-padding-y */
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;               /* navbar-brand-margin-end */
-    font-size: 1.25rem;               /* navbar-brand-font-size */
-    color: rgba(0, 0, 0, 0.9);       /* navbar-brand-color */
-}
-
-.navbar .navbar-brand:hover {
-    color: rgba(0, 0, 0, 0.7);       /* navbar-brand-hover-color */
-}
-
-/* Navbar toggler */
-.navbar .navbar-toggler {
-    padding: 0.25rem 0.75rem;        /* navbar-toggler-padding-y/x */
-    font-size: 1.25rem;               /* navbar-toggler-font-size */
-    border-color: rgba(0, 0, 0, 0.1); /* navbar-toggler-border-color */
-    border-radius: 0.25rem;           /* navbar-toggler-border-radius */
-    transition: all 0.15s ease-in-out; /* navbar-toggler-transition */
-}
-
-.navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* navbar-toggler-icon-bg */
-}
-/* Navbar background */
-.navbar {
-  background-color: #0d6efd; /* Bootstrap primary blue */
   padding: 0.5rem 1rem;
 }
 
-/* Navbar brand */
 .navbar .navbar-brand {
-  color: white;
   font-weight: bold;
-  font-size: 1.25rem;
-  text-decoration: none;
 }
 
-/* Navbar links */
 .navbar .nav-link {
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
+  margin-right: 1rem;
   transition: color 0.3s;
 }
 
-/* Hover effect for links */
 .navbar .nav-link:hover {
-  color: #ffc107; /* yellow/orange highlight on hover */
+  color: #ffc107;
 }
 
-/* Active link styling */
-.navbar .nav-link.active {
-  font-weight: bold;
-  text-decoration: underline;
+/* About Me picture */
+#about img {
+  max-width: 100%;
+  border-radius: 0.5rem;
 }
 
-/* Optional: spacing between brand and links */
-.navbar-nav {
-  margin-left: 2rem;
+/* Custom text highlight */
+.text-pink {
+  color: rgb(204, 102, 222);
+  background-color: blanchedalmond;
+  text-shadow: 10px 10px 15px rgb(17, 8, 63);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
 }
