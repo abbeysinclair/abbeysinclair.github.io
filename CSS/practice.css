@@ -102,6 +102,54 @@ section {
 
 #education {
     background-color: #F8F4EA;
+    padding: 30px;
+    margin-top: 70px;
+    height: auto;              /* let it expand based on content */
+    min-height: 700px;         /* keep section height consistent */
+    display: flex;
+    flex-direction: column;
+}
+
+.education-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.edu-logo {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+}
+
+.edu-details h2 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+.edu-details h3 {
+    font-size: 18px;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.edu-date {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.edu-subheading {
+    font-weight: bold;
+    margin: 10px 0 6px 0;
+}
+
+.edu-details ul {
+    margin-left: 20px;
+    line-height: 1.6;
 }
 
 #experience {
