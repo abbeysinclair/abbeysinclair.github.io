@@ -110,6 +110,10 @@ section {
     flex-direction: column;
 }
 
+#education h1 {
+    margin-bottom: 40px;   /* adjust this number to move content further down */
+}
+
 .education-entry {
     display: flex;
     align-items: flex-start;
