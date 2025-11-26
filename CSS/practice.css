@@ -1,44 +1,88 @@
+
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+/* COLOR PALETTE */
+:root {
+    --bg: #FAF8F3;        /* Cream background */
+    --text: #1A1A1A;      /* Deep charcoal text */
+    --black: #000000;     /* True black (headings/nav) */
+    --accent: #FFC300;    /* Golden yellow accent */
 }
 
-body{
-    color:white;
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
 }
 
-#header{
-    height:70px;
-    background-color: orange;
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
 }
 
-#about,
-#education,
-#experience,
-#skills,
-#contact{
-    height:700px;
+/* HEADER / NAV */
+#header {
+    height: 70px;
+    background-color: var(--black);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-#about{
-    background-color: rgb(232, 118, 118)
+#header nav a {
+    color: var(--bg);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
 }
 
-#education{
-    background-color: rgb(160, 220, 99)
+/* Hover effect: yellow accent underline */
+#header nav a:hover {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 3px;
 }
 
-#experience{
-    background-color: rgb(170, 103, 206)
+/* SECTION STYLING */
+section {
+    height: 700px;
+    padding-top: 120px; /* space below fixed header */
+    padding-left: 30px;
 }
 
-#skills{
-    background-color: rgb(87, 124, 226)
+/* Use subtle tones of the palette for each section */
+#about {
+    background-color: #FFFDF7; /* cream variant */
 }
 
-#contact{
-    background-color: rgb(87, 201, 142)
+#education {
+    background-color: #F8F4EA;
+}
+
+#experience {
+    background-color: #F3EDE1;
+}
+
+#skills {
+    background-color: #EFE8D7;
+}
+
+#contact {
+    background-color: #EDE4D1;
+}
+
+/* SECTION HEADERS */
+section h1 {
+    color: var(--black);
+    font-size: 40px;
 }
