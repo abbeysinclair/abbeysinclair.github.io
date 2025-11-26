@@ -16,7 +16,9 @@
 /* GENERAL */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* matches your navbar height */
 }
+
 
 body {
     background-color: var(--bg);
