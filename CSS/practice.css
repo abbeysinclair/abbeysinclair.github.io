@@ -62,8 +62,14 @@ section {
 
 /* Use subtle tones of the palette for each section */
 #about {
-    background-color: #FFFDF7; /* cream variant */
+    background-color: #FFFDF7; /* or your cream color */
+    height: 700px;
+
+    display: flex;
+    align-items: center;   /* centers content vertically */
+    padding-left: 30px;
 }
+
 
 #education {
     background-color: #F8F4EA;
@@ -89,17 +95,16 @@ section h1 {
 
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: center;  /* keeps text aligned with the image */
     gap: 40px;
-    max-width: 900px;
-    padding-left: 30px;
+    max-width: 1000px;
 }
 
 .headshot {
-    width: 260px;              /* adjust size if needed */
-    height: auto;              /* maintains natural proportions */
-    border-radius: 12px;       /* soft modern corners */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);  /* subtle depth */
+    width: 320px;       /* increased size */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
     object-fit: cover;
 }
 
