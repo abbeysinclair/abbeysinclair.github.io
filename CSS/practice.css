@@ -10,7 +10,7 @@
     --bg: #FAF8F3;        /* Cream background */
     --text: #1A1A1A;      /* Deep charcoal text */
     --black: #000000;     /* True black (headings/nav) */
-    --accent: #FFC300;    /* Golden yellow accent */
+    --accent: #ff680b;    /* Golden yellow accent */
 }
 
 /* GENERAL */
@@ -96,11 +96,11 @@ section h1 {
 }
 
 .headshot {
-    width: 220px;
-    height: 220px;
+    width: 260px;              /* adjust as needed */
+    height: auto;              /* keeps natural proportions */
+    border-radius: 12px;       /* soft rounded corners, professional */
+    border: 4px solid var(--accent);  /* orange accent */
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--accent); /* yellow pop */
 }
 
 .about-text {
