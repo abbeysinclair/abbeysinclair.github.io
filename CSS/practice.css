@@ -15,20 +15,30 @@ body{
     background-color: orange;
 }
 
-#home,
 #about,
+#education,
+#experience,
+#skills,
 #contact{
     height:700px;
 }
 
-#home{
-    background-color: red
+#about{
+    background-color: rgb(232, 118, 118)
 }
 
-#about{
-    background-color: rgb(157, 0, 255)
+#education{
+    background-color: rgb(160, 220, 99)
+}
+
+#experience{
+    background-color: rgb(170, 103, 206)
+}
+
+#skills{
+    background-color: rgb(87, 124, 226)
 }
 
 #contact{
-    background-color: rgb(43, 0, 255)
+    background-color: rgb(87, 201, 142)
 }
