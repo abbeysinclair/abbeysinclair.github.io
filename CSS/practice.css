@@ -1,0 +1,34 @@
+{
+    margin: 0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    color:white;
+}
+
+#header{
+    height:70px;
+    background-color: orange;
+}
+
+#home,
+#about,
+#contact{
+    height:700px;
+}
+
+#home{
+    background-color: red
+}
+
+#about{
+    background-color: rgb(157, 0, 255)
+}
+
+#contact{
+    background-color: rgb(43, 0, 255)
+}
