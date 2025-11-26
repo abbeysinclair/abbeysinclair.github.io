@@ -158,7 +158,49 @@ section {
 
 #experience {
     background-color: #F3EDE1;
+    padding: 30px;
+    margin-top: 70px;
+    height: auto;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Subsection headers: Work Experience / Research Experience */
+.subheading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: var(--black);
+    border-left: 6px solid var(--accent);
+    padding-left: 12px;
+}
+
+/* Each experience block */
+.experience-entry {
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+
+/* Title + metadata */
+.exp-details h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--black);
+}
+
+.exp-meta {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Bullet styling */
+.experience-entry ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
 
 #skills {
     background-color: #EFE8D7;
