@@ -96,10 +96,10 @@ section h1 {
 }
 
 .headshot {
-    width: 260px;              /* adjust as needed */
-    height: auto;              /* keeps natural proportions */
-    border-radius: 12px;       /* soft rounded corners, professional */
-    border: 4px solid var(--accent);  /* orange accent */
+    width: 260px;              /* adjust size if needed */
+    height: auto;              /* maintains natural proportions */
+    border-radius: 12px;       /* soft modern corners */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);  /* subtle depth */
     object-fit: cover;
 }
 
