@@ -70,7 +70,6 @@ section {
     display: flex;
     flex-direction: column;
 }
-
 #about h1 {
     margin-bottom: 20px;
     color: var(--black);
@@ -117,6 +116,11 @@ section {
     background-color: #EDE4D1;
 }
 
+section {
+    height: 700px;
+    padding-left: 30px;
+    margin-top: 70px; /* FIXED */
+}
 /* SECTION HEADERS */
 section h1 {
     color: var(--black);
