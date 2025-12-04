@@ -92,7 +92,11 @@ section {
     color: var(--black);
     margin-bottom: 40px;
     font-weight: bold;
+    position: relative;
+    z-index: 3; /* ABOVE the blob and headshot */
 }
+
+
 
 .about-content {
     display: flex;
@@ -134,8 +138,6 @@ section {
     line-height: 1.7;
     max-width: 600px;
 }
-
-
 
 #education {
     background-color: #F8F4EA;
