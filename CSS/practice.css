@@ -336,9 +336,13 @@ section {
 
 /* EXPERIENCE — TWO COLUMN LAYOUT */
 .experience-grid {
+    display: flex;         /* THIS makes the two columns side-by-side */
+    gap: 40px;
+    align-items: flex-start;
     position: relative;
-    z-index: 2; /* keeps content above blob */
+    z-index: 2;            /* keeps it above the blob */
 }
+
 
 
 .exp-column {
