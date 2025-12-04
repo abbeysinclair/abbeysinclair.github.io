@@ -39,9 +39,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999; /* highest layer */
-}
-
+    z-index: 9999; /* navbar always on top */
 }
 
 #header nav a {
@@ -66,8 +64,7 @@ section {
     height: auto;       /* let content decide height */
 }
 
-
-/* Use subtle tones of the palette for each section */
+/* ABOUT SECTION */
 #about {
     background-color: #FFFDF7;
     padding: 80px 0;
@@ -77,37 +74,18 @@ section {
     min-height: 700px;
 }
 
-}
-
 #about h1 {
     margin-bottom: 20px;
     color: var(--black);
     font-size: 40px;
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 60px;
-    position: relative;
-    z-index: 1; /* neutral */
-}
-
-}
-
-
-
 .about-wrapper {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1; /* neutral */
+    position: relative; /* so blob/headshot sit inside this context */
 }
-
-}
-
 
 .about-title {
     font-size: 42px;
@@ -116,25 +94,28 @@ section {
     font-weight: bold;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+}
 
 .about-image-wrapper {
-    position: relative;
-    z-index: 1; /* neutral */
+    position: relative; /* parent for blob + headshot */
 }
 
-}
-
+/* HEADSHOT – same size as before, above blob */
 .headshot {
     width: 320px;
     border-radius: 12px;
     object-fit: cover;
-    z-index: 2;
     position: relative;
+    z-index: 2; /* above blob */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
-}
-
+/* ORANGE BLOB – behind headshot, above background */
 .orange-accent-blob {
     position: absolute;
     top: -80px;
@@ -145,16 +126,15 @@ section {
     border-radius: 50%;
     filter: blur(18px);
     opacity: 0.35;
-    z-index: 1;
-    position: absolute;
+    z-index: 1; /* below headshot */
 }
-
 
 .about-text {
     font-size: 18px;
     line-height: 1.7;
     max-width: 600px;
 }
+
 
 
 #education {
