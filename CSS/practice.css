@@ -288,14 +288,85 @@ section {
     object-fit: cover;
 }
 
-/* Hide the radio inputs */
-input[name="cat"] {
+/* HIKING CAROUSEL — same size as cat carousel */
+#interest-hiking {
+    max-width: calc(33.333% - 30px);
+}
+
+#interest-hiking .hike-carousel {
+    position: relative;
+    width: 100%;
+    height: 480px; /* same as cat carousel */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Vertical sliding container */
+.hike-carousel-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+}
+
+.hike-slide {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Hide radio buttons */
+input[name="hike"] {
   display: none;
 }
 
-#interest-cat .cat-carousel {
-    width: 100%;
-    margin: 0 auto;
+/* BUTTONS — identical to cat buttons */
+.hike-btn {
+    background: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.hike-btn:hover {
+    background: #333;
+    transform: scale(1.08);
+}
+
+/* Position each set of buttons top-right depending on slide */
+.hike-buttons > div {
+    display: none;
+}
+
+#hike-1:checked ~ .hike-carousel .hike-buttons #hike-nav1,
+#hike-2:checked ~ .hike-carousel .hike-buttons #hike-nav2,
+#hike-3:checked ~ .hike-carousel .hike-buttons #hike-nav3,
+#hike-4:checked ~ .hike-carousel .hike-buttons #hike-nav4 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 10px;
+}
+
+/* Slide movement */
+#hike-1:checked ~ .hike-carousel .hike-carousel-inner {
+  transform: translateY(0px);
+}
+#hike-2:checked ~ .hike-carousel .hike-carousel-inner {
+  transform: translateY(-480px);
+}
+#hike-3:checked ~ .hike-carousel .hike-carousel-inner {
+  transform: translateY(-960px);
+}
+#hike-4:checked ~ .hike-carousel .hike-carousel-inner {
+  transform: translateY(-1440px);
 }
 
 

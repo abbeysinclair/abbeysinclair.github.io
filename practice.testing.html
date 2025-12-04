@@ -164,12 +164,51 @@
 
   <div class="interests-grid">
 
-    <!-- Hiking -->
-    <div class="interest-card" id="interest-hiking">
-      <h2>Hiking</h2>
-      <img src="Assets/hiking.jpg" alt="Hiking" class="interest-image">
-      <p>I love getting outside and exploring trails when I can.</p>
-    </div>
+
+    <!-- Hiking Carousel -->
+<div class="interest-card" id="interest-hiking">
+  <h2>Hiking</h2>
+
+  <!-- Hidden radio buttons -->
+  <input type="radio" name="hike" id="hike-1" checked>
+  <input type="radio" name="hike" id="hike-2">
+  <input type="radio" name="hike" id="hike-3">
+  <input type="radio" name="hike" id="hike-4">
+
+  <div class="hike-carousel">
+
+      <div class="hike-carousel-inner">
+        <img src="Assets/img/hiking1.jpg" class="hike-slide">
+        <img src="Assets/img/hiking2.jpg" class="hike-slide">
+        <img src="Assets/img/hiking3.jpg" class="hike-slide">
+        <img src="Assets/img/hiking4.jpg" class="hike-slide">
+      </div>
+
+      <!-- Top-right buttons -->
+      <div class="hike-buttons">
+
+        <div class="hike-nav" id="hike-nav1">
+          <label for="hike-2" class="hike-btn">▼</label>
+        </div>
+
+        <div class="hike-nav" id="hike-nav2">
+          <label for="hike-1" class="hike-btn">▲</label>
+          <label for="hike-3" class="hike-btn">▼</label>
+        </div>
+
+        <div class="hike-nav" id="hike-nav3">
+          <label for="hike-2" class="hike-btn">▲</label>
+          <label for="hike-4" class="hike-btn">▼</label>
+        </div>
+
+        <div class="hike-nav" id="hike-nav4">
+          <label for="hike-3" class="hike-btn">▲</label>
+        </div>
+
+      </div>
+  </div>
+</div>
+
 
     <!-- My Cat -->
    <div class="interest-card" id="interest-cat">
