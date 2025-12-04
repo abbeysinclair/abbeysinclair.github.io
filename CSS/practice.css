@@ -293,7 +293,7 @@ input[name="cat"] {
 }
 
 #interest-cat .cat-slide {
-    height: 360px; /* was 320 */
+    height: 480px;
 }
 
 
