@@ -23,8 +23,23 @@ html {
 body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+section h1 {
+    border-left: 8px solid var(--accent);
+    padding-left: 16px;
+    letter-spacing: 0.5px;
+}
+
+section {
+    padding-top: 140px; /* balanced for all sections */
+}
+
 
 /* HEADER / ABBEY SINCLAIR */
 #header {
