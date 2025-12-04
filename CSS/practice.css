@@ -288,74 +288,96 @@ section {
     object-fit: cover;
 }
 
-/* Hiking carousel — same height as cat carousel */
+/* === HIKING CAROUSEL — MATCH CAT CAROUSEL EXACTLY === */
+
 #interest-hiking .hiking-carousel {
-    position: relative;
     width: 100%;
-    height: 480px; /* match cat carousel */
+    height: 520px;  /* match cat carousel height */
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: relative;
 }
 
-#interest-hiking .hiking-carousel-inner {
+/* Stack images vertically */
+.hiking-carousel-inner {
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease;
 }
 
+/* Each hiking image */
 #interest-hiking .hiking-slide {
     width: 100%;
-    height: 480px;
+    height: 520px; /* same as cat */
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
-/* Hide hiking nav by default */
+/* Hide radio buttons */
+input[name="hike"] {
+    display: none;
+}
+
+/* Hide all nav sets */
 .hiking-buttons > div {
     display: none;
 }
 
-/* Show correct nav depending on checked radio button */
-#hike-1:checked ~ .hiking-carousel .hiking-buttons #hike-nav1,
-#hike-2:checked ~ .hiking-carousel .hiking-buttons #hike-nav2,
-#hike-3:checked ~ .hiking-carousel .hiking-buttons #hike-nav3,
+/* Show correct nav arrows */
+#hike-1:checked ~ .hiking-carousel .hiking-buttons #hike-nav1 {
+    display: flex;
+}
+#hike-2:checked ~ .hiking-carousel .hiking-buttons #hike-nav2 {
+    display: flex;
+}
+#hike-3:checked ~ .hiking-carousel .hiking-buttons #hike-nav3 {
+    display: flex;
+}
 #hike-4:checked ~ .hiking-carousel .hiking-buttons #hike-nav4 {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 10px;
-    top: -40px; /* above the photo just like cat */
-    gap: 8px;
 }
 
-/* Button look */
+/* Arrow button styling */
 .hike-btn {
-    background: var(--black);
+    background: black;
     color: white;
-    padding: 6px 10px;
+    padding: 4px 10px;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
 }
 
 .hike-btn:hover {
-    background: var(--accent);
+    background: #333;
+    transform: scale(1.08);
 }
 
-/* Slide positioning */
+/* Position arrows in top-right */
+.hiking-buttons > div {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+/* Slide movement (based on 520px height) */
 #hike-1:checked ~ .hiking-carousel .hiking-carousel-inner {
-    transform: translateY(0px);
+  transform: translateY(0px);
 }
 #hike-2:checked ~ .hiking-carousel .hiking-carousel-inner {
-    transform: translateY(-480px);
+  transform: translateY(-520px);
 }
 #hike-3:checked ~ .hiking-carousel .hiking-carousel-inner {
-    transform: translateY(-960px);
+  transform: translateY(-1040px);
 }
 #hike-4:checked ~ .hiking-carousel .hiking-carousel-inner {
-    transform: translateY(-1440px);
+  transform: translateY(-1560px);
 }
+
 
 /* Make the interest grid layout behave properly */
 .interests-grid {
