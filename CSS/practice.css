@@ -306,22 +306,27 @@ section {
     margin-top: 70px;
     height: auto;
     min-height: 700px;
-    position: relative; /* needed so blob positions inside this section */
+    position: relative;
+    z-index: 0; /* ADD THIS */
 }
 
-/* ORANGE BLOB BEHIND EXPERIENCE TITLE */
 .experience-blob {
     position: absolute;
-    top: -40px;       /* shift upward slightly */
-    left: -60px;      /* shift left to peek out of the corner */
-    width: 360px;
-    height: 260px;
+    top: -80px;
+    left: -100px;
+    width: 500px;
+    height: 420px;
     background: var(--accent);
-    border-radius: 50%;
-    filter: blur(22px);
-    opacity: 0.35;
-    z-index: 1;       /* behind title, above background */
+
+    /* organic blob shape */
+    border-radius: 55% 70% 60% 80% / 60% 50% 75% 55%;
+
+    filter: blur(30px);
+    opacity: 0.32;
+
+    z-index: 1; /* behind all Experience content */
 }
+
 
 /* Make sure title stays above blob */
 #experience h1 {
@@ -331,10 +336,10 @@ section {
 
 /* EXPERIENCE — TWO COLUMN LAYOUT */
 .experience-grid {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
+    position: relative;
+    z-index: 2; /* keeps content above blob */
 }
+
 
 .exp-column {
     flex: 1;
@@ -376,42 +381,6 @@ section {
     color: var(--black);
     border-left: 6px solid var(--accent);
     padding-left: 12px;
-}
-
-.experience-entry {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-    margin: 0 auto 40px auto;   /* centers the block */
-    width: 80%;                 /* adjust to 70–90% */
-    max-width: 900px;
-}
-
-
-.experience-entry h3 {
-    grid-column: 2;   /* title always on the right */
-}
-
-.section-label {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--black);
-}
-
-
-
-.exp-meta {
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Bullet styling */
-.experience-entry ul {
-    margin-left: 20px;
-    line-height: 1.6;
 }
 
 
