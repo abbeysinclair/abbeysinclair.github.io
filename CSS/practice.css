@@ -250,9 +250,32 @@ section {
 }
 
 
-#skills {
+#interests {
     background-color: #EFE8D7;
 }
+
+.interests-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+.interest-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    flex: 1 1 280px;
+}
+
+.interest-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
 
 #contact {
     background-color: #EDE4D1;
