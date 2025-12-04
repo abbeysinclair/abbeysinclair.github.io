@@ -292,18 +292,6 @@ input[name="cat"] {
     margin: 0 auto;
 }
 
-#interest-cat .cat-slide {
-    height: 480px;
-}
-
-
-/* Resize images to fit the narrow carousel */
-#interest-cat .cat-slide {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 10px;
-}
 
 /* Make the interest grid layout behave properly */
 .interests-grid {
@@ -313,47 +301,60 @@ input[name="cat"] {
     align-items: flex-start;
 }
 
-/* Carousel container */
-.cat-carousel {
-    position: relative;
+/* === CAT CAROUSEL — FINAL VERSION === */
+
+/* Container inside the interest card */
+#interest-cat .cat-carousel {
     width: 100%;
-    height: 320px; /* Visible frame height */
+    height: 520px;   /* iPhone-style tall portrait */
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: relative;
 }
 
-/* Image container */
+/* Stack the images vertically */
 .cat-carousel-inner {
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease;
 }
 
-/* Each slide */
-.cat-slide {
+/* Each cat photo */
+#interest-cat .cat-slide {
     width: 100%;
-    height: 320px;
+    height: 520px;   /* tall photos */
     object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Positioning the nav buttons */
+/* Hide radio buttons */
+input[name="cat"] {
+  display: none;
+}
+
+/* NAV BUTTONS — show correct ones depending on selected radio */
 .cat-buttons > div {
     display: none;
 }
 
-#cat-1:checked ~ .cat-carousel .cat-buttons #nav1,
-#cat-2:checked ~ .cat-carousel .cat-buttons #nav2,
-#cat-3:checked ~ .cat-carousel .cat-buttons #nav3,
-#cat-4:checked ~ .cat-carousel .cat-buttons #nav4 {
+#cat-1:checked ~ .cat-carousel .cat-buttons #nav1 {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    gap: 10px;
 }
 
+#cat-2:checked ~ .cat-carousel .cat-buttons #nav2 {
+    display: flex;
+}
+
+#cat-3:checked ~ .cat-carousel .cat-buttons #nav3 {
+    display: flex;
+}
+
+#cat-4:checked ~ .cat-carousel .cat-buttons #nav4 {
+    display: flex;
+}
+
+/* Style arrow buttons */
 .cat-btn {
     background: var(--accent);
     color: white;
@@ -363,22 +364,32 @@ input[name="cat"] {
     cursor: pointer;
 }
 
-/* Slide movement controlled by radio buttons */
+/* Position nav buttons */
+.cat-buttons > div {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+/* Slide movement (based on image height 520px) */
 #cat-1:checked ~ .cat-carousel .cat-carousel-inner {
   transform: translateY(0px);
 }
 
 #cat-2:checked ~ .cat-carousel .cat-carousel-inner {
-  transform: translateY(-320px);
+  transform: translateY(-520px);
 }
 
 #cat-3:checked ~ .cat-carousel .cat-carousel-inner {
-  transform: translateY(-640px);
+  transform: translateY(-1040px);
 }
 
 #cat-4:checked ~ .cat-carousel .cat-carousel-inner {
-  transform: translateY(-960px);
+  transform: translateY(-1560px);
 }
+
 
 
 #contact {
