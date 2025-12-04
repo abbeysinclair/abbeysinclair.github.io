@@ -223,6 +223,18 @@ section {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     background: white;
 }
+.cv-header {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 15px;
+    text-align: center;
+
+    /* optional orange underline accent */
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 4px;
+}
 
 #experience {
     background-color: #F3EDE1;
