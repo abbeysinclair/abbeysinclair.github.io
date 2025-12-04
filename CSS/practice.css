@@ -306,9 +306,29 @@ section {
     margin-top: 70px;
     height: auto;
     min-height: 700px;
-    display: flex;
-    flex-direction: column;
+    position: relative; /* needed so blob positions inside this section */
 }
+
+/* ORANGE BLOB BEHIND EXPERIENCE TITLE */
+.experience-blob {
+    position: absolute;
+    top: -40px;       /* shift upward slightly */
+    left: -60px;      /* shift left to peek out of the corner */
+    width: 360px;
+    height: 260px;
+    background: var(--accent);
+    border-radius: 50%;
+    filter: blur(22px);
+    opacity: 0.35;
+    z-index: 1;       /* behind title, above background */
+}
+
+/* Make sure title stays above blob */
+#experience h1 {
+    position: relative;
+    z-index: 2;
+}
+
 /* EXPERIENCE — TWO COLUMN LAYOUT */
 .experience-grid {
     display: flex;
