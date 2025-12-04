@@ -223,6 +223,33 @@ section {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     background: white;
 }
+.education-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-right: 30px;
+}
+
+.education-header h1 {
+    margin: 0;
+}
+
+.cv-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+    transition: 0.2s ease;
+}
+
+.cv-link:hover {
+    color: #e45e00;
+    border-bottom-color: #e45e00;
+}
+
 .cv-header {
     font-size: 22px;
     font-weight: bold;
