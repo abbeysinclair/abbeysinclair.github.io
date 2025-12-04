@@ -65,9 +65,10 @@ section {
 /* Use subtle tones of the palette for each section */
 #about {
     background-color: #FFFDF7;
-    padding: 40px 0;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 700px;
 }
 
@@ -80,8 +81,9 @@ section {
 .about-content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
 }
+
 
 
 .about-wrapper {
@@ -90,17 +92,13 @@ section {
     margin: 0 auto;
 }
 
+
 .about-title {
     font-size: 40px;
     color: var(--black);
     margin-bottom: 30px;
-    border-left: 6px solid var(--accent);
-    padding-left: 12px;
 }
 
-.about-image-wrapper {
-    position: relative;
-}
 
 .headshot {
     width: 320px;
@@ -111,15 +109,19 @@ section {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
-/* soft orange circle behind the image */
-.orange-accent-circle {
+.about-image-wrapper {
+    position: relative;
+}
+
+.orange-accent-blob {
     position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 140px;
-    height: 140px;
+    top: -60px;
+    left: -80px;
+    width: 380px;
+    height: 380px;
     background: var(--accent);
     border-radius: 50%;
+    filter: blur(30px);
     opacity: 0.18;
     z-index: 1;
 }
