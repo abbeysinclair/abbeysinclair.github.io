@@ -281,6 +281,34 @@ input[name="cat"] {
   display: none;
 }
 
+/* Make the cat interest card narrower */
+#interest-cat {
+    max-width: 260px;
+}
+
+/* Limit carousel width inside the card */
+#interest-cat .cat-carousel {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+/* Resize images to fit the narrow carousel */
+#interest-cat .cat-slide {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Make the interest grid layout behave properly */
+.interests-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
 /* Carousel container */
 .cat-carousel {
     position: relative;
