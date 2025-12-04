@@ -309,6 +309,44 @@ section {
     display: flex;
     flex-direction: column;
 }
+/* EXPERIENCE — TWO COLUMN LAYOUT */
+.experience-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.exp-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.exp-item {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.exp-item h3 {
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.exp-meta {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.exp-item ul {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
 
 /* Subsection headers: Work Experience / Research Experience */
 .subheading {
