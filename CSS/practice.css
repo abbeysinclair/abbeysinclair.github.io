@@ -276,6 +276,78 @@ section {
     object-fit: cover;
 }
 
+/* Hide the radio inputs */
+input[name="cat"] {
+  display: none;
+}
+
+/* Carousel container */
+.cat-carousel {
+    position: relative;
+    width: 100%;
+    height: 320px; /* Visible frame height */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Image container */
+.cat-carousel-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+}
+
+/* Each slide */
+.cat-slide {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Positioning the nav buttons */
+.cat-buttons > div {
+    display: none;
+}
+
+#cat-1:checked ~ .cat-carousel .cat-buttons #nav1,
+#cat-2:checked ~ .cat-carousel .cat-buttons #nav2,
+#cat-3:checked ~ .cat-carousel .cat-buttons #nav3,
+#cat-4:checked ~ .cat-carousel .cat-buttons #nav4 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 10px;
+}
+
+.cat-btn {
+    background: var(--accent);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Slide movement controlled by radio buttons */
+#cat-1:checked ~ .cat-carousel .cat-carousel-inner {
+  transform: translateY(0px);
+}
+
+#cat-2:checked ~ .cat-carousel .cat-carousel-inner {
+  transform: translateY(-320px);
+}
+
+#cat-3:checked ~ .cat-carousel .cat-carousel-inner {
+  transform: translateY(-640px);
+}
+
+#cat-4:checked ~ .cat-carousel .cat-carousel-inner {
+  transform: translateY(-960px);
+}
+
 
 #contact {
     background-color: #EDE4D1;
