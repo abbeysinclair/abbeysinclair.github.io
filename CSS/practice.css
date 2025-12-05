@@ -172,22 +172,27 @@ section {
 .education-header {
     display: flex;
     justify-content: space-between;
-    padding-right: 30px;
-    margin-bottom: 25px;
+    align-items: center;   
+    margin-bottom: 30px;
+    padding-right: 10px;   
 }
 
+
 .cv-link {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
     color: var(--accent);
-    border-bottom: 2px solid var(--accent);
     text-decoration: none;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+    transition: 0.2s ease;
 }
 
 .cv-link:hover {
     color: #e45e00;
     border-bottom-color: #e45e00;
 }
+
 
 .education-layout {
     display: flex;
