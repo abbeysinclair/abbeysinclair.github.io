@@ -350,13 +350,24 @@ section {
 
 /* -------------------- INTERESTS SECTION -------------------- */
 
-
 #interests {
     position: relative;          
     background-color: transparent;  
     padding-top: 80px;        
     padding-bottom: 120px;       
 }
+
+.interests-heading {
+    margin-top: 0;         /* remove weird downward push */
+    margin-bottom: 30px;   /* space between title and carousels */
+    padding-left: 16px;    /* same style as other headings */
+    border-left: 8px solid var(--accent);
+    font-size: 40px;
+    color: var(--black);
+    position: relative;
+    z-index: 3;            /* stays ABOVE the orange blob */
+}
+
 .interests-blob {
     position: absolute;
     top: 160px;             
