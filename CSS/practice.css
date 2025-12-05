@@ -20,10 +20,10 @@ html {
 body {
     background: linear-gradient(
         to bottom,
-        #FFFDF8 0%,
-        #FAF3E8 25%,
-        #F5EAD8 55%,
-        #EFE1C7 100%
+        #FCFAF6 0%,
+        #F8F4EE 30%,
+        #F3EFE8 65%,
+        #EEE9E1 100%
     );
     color: var(--text);
     font-family: 'Inter', sans-serif;
