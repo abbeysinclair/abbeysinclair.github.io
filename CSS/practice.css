@@ -40,7 +40,8 @@ h1, h2, h3 {
 
 section {
     padding-left: 30px;
-    margin-top: 70px;
+    padding-top: 40px;  
+    margin-top: 70px;   
     height: auto;
 }
 
@@ -351,10 +352,10 @@ section {
 /* -------------------- INTERESTS SECTION -------------------- */
 
 #interests {
-    position: relative;          
-    background-color: transparent;  
-    padding-top: 80px;        
-    padding-bottom: 120px;       
+    background-color: #EFE8D7;
+    padding-top: 10px;     /* ↓ reduced so nav scrolls to right position */
+    padding-bottom: 80px;
+    position: relative;
 }
 
 .interests-heading {
