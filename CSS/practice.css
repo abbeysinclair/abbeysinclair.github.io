@@ -18,10 +18,19 @@ html {
 }
 
 body {
-    background-color: var(--bg);
+    background: linear-gradient(
+        to bottom,
+        #FFF7EB 0%,
+        #FAF0DA 25%,
+        #F4E6C5 50%,
+        #EFE0BA 75%,
+        #E9D7A8 100%
+    );
+
     color: var(--text);
     font-family: 'Inter', sans-serif;
 }
+
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
@@ -74,7 +83,6 @@ section {
 /* -------------------------------- */
 
 #about {
-    background-color: #FFFDF7;
     padding: 80px 0;
     min-height: 700px;
 }
@@ -144,7 +152,6 @@ section {
 /* -------------------------------- */
 
 #education {
-    background-color: #F8F4EA;
     min-height: 700px;
     padding-bottom: 40px;
 }
@@ -258,7 +265,6 @@ section {
 /* -------------------------------- */
 
 #experience {
-    background-color: #F3EDE1;
     min-height: 700px;
     position: relative;
 }
@@ -321,7 +327,6 @@ section {
 /* -------------------- INTERESTS SECTION -------------------- */
 
 #interests {
-    background-color: #EFE8D7;
     padding-bottom: 60px;
 }
 
@@ -508,7 +513,6 @@ input[name="hike"] {
 /* -------------------------------- */
 
 #contact {
-    background-color: #EDE4D1;
     padding-bottom: 80px;
     min-height: 600px;
 }
