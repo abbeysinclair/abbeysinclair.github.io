@@ -212,6 +212,11 @@ section {
     object-fit: contain;
 }
 
+.edu-logoubc {
+    width: 120px;
+    object-fit: contain;
+}
+
 .edu-details h2 {
     font-size: 24px;
     margin-bottom: 5px;
