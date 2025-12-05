@@ -157,62 +157,44 @@ section {
 /* -------------------------------- */
 
 #education {
+    background-color: #F8F4EA;
+    padding: 50px 30px;
     min-height: 700px;
-    padding-bottom: 40px;
 }
 
-#education h1 {
-    font-size: 40px;
-    color: var(--black);
-    border-left: 8px solid var(--accent);
-    padding-left: 16px;
-    margin-bottom: 40px;
-}
-
+/* Header with title + CV link */
 .education-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin-bottom: 40px;
-    padding-right: 0; /* fix right-floating issue */
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
 }
-
-.education-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    max-width: 1100px;        /* keeps it aligned with your content */
-    margin: 0 auto 30px auto; /* centers it */
-    padding: 0 20px;          /* small horizontal padding */
-}
-
 
 .cv-link {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
     color: var(--accent);
     text-decoration: none;
     border-bottom: 2px solid var(--accent);
     padding-bottom: 2px;
-    transition: 0.2s ease;
 }
-
 .cv-link:hover {
     color: #e45e00;
     border-bottom-color: #e45e00;
 }
 
-
+/* Two-column layout */
 .education-layout {
     display: flex;
-    flex-direction: column; 
-    max-width: 1100px;
-    margin: 0 auto;          
     gap: 40px;
+    max-width: 1100px;
+    margin: auto;
 }
 
+/* ======================
+   LEFT COLUMN — ENTRIES
+   ====================== */
 
 .education-left {
     flex: 1;
@@ -220,6 +202,7 @@ section {
 
 .education-entry {
     display: flex;
+    align-items: flex-start;
     gap: 30px;
     margin-bottom: 50px;
 }
@@ -231,60 +214,67 @@ section {
 
 .edu-details h2 {
     font-size: 24px;
-    color: var(--black);
+    margin-bottom: 5px;
 }
 
 .edu-details h3 {
     font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .edu-date {
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 10px;
     color: #555;
 }
 
-.edu-details ul {
-    margin-left: 20px;
-    line-height: 1.6;
-}
+/* ======================
+   RIGHT COLUMN — PDF CV
+   ====================== */
 
 .education-right {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     position: relative;
 }
 
 .cv-wrapper {
-    max-width: 480px; 
     width: 100%;
+    max-width: 520px;
     position: relative;
-    margin-top: 20px; 
 }
 
-.cv-viewer {
-    width: 100%;
-    height: 520px; /* slightly shorter */
-    border-radius: 12px;
-    border: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-    background: white;
-    z-index: 2;
-}
-
-
+/* ORANGE BLOB BEHIND PDF */
 .cv-blob {
     position: absolute;
     top: -40px;
     left: -40px;
     right: -40px;
     bottom: -40px;
+
     background: var(--accent);
-    border-radius: 28px;
-    filter: blur(24px);
-    opacity: 0.35;
-    z-index: 1;
+    border-radius: 30px;
+    filter: blur(28px);
+    opacity: 0.32;
+
+    z-index: 1;  /* behind PDF */
 }
+
+/* PDF viewer */
+.cv-viewer {
+    width: 100%;
+    height: 620px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+
+    position: relative;
+    z-index: 2; /* above blob */
+}
+
 
 /* -------------------------------- */
 /* EXPERIENCE */
