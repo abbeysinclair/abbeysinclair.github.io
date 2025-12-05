@@ -374,10 +374,10 @@ section {
     transform: translateX(-50%);
 
     width: 90%;              
-    height: 120px;         
+    height: 150px;         
     
     background: var(--accent);
-    opacity: 0.45;         
+    opacity: 0.75;         
     filter: blur(55px);
 
     border-radius: 50% / 80%;
