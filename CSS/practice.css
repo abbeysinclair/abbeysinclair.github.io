@@ -149,9 +149,16 @@ section {
 
 #education {
     background-color: #F8F4EA;
-    min-height: 700px;
-    padding-bottom: 40px;
+    padding: 30px;
+    margin-top: 70px;
+    height: auto;             
+    min-height: 700px;        
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
 }
+
 
 #education h1 {
     font-size: 40px;
