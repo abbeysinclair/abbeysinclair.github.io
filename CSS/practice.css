@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -33,32 +32,27 @@ h1, h2 {
     font-family: 'Merriweather', serif;
 }
 
-
 h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-/* -------------------------------- */
-/* GLOBAL SECTION SPACING */
-/* -------------------------------- */
+/* -------------------- GLOBAL SECTION SPACING -------------------- */
 
 section {
     padding-left: 30px;
-    padding-top: 40px;  
-    margin-top: 70px;   
+    padding-top: 40px;
+    margin-top: 70px;
     height: auto;
 }
 
 .section-divider {
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.15); /* soft neutral line */
-    margin: 80px 0; /* spacing above/below */
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 80px 0;
 }
 
-/* -------------------------------- */
-/* HEADER */
-/* -------------------------------- */
+/* -------------------- HEADER -------------------- */
 
 #header {
     height: 70px;
@@ -88,9 +82,7 @@ section {
     padding-bottom: 3px;
 }
 
-/* -------------------------------- */
-/* ABOUT */
-/* -------------------------------- */
+/* -------------------- ABOUT SECTION -------------------- */
 
 #about {
     padding: 80px 0;
@@ -157,9 +149,7 @@ section {
     max-width: 600px;
 }
 
-/* -------------------------------- */
-/* EDUCATION */
-/* -------------------------------- */
+/* -------------------- EDUCATION SECTION -------------------- */
 
 #education {
     background-color: #F8F4EA;
@@ -167,7 +157,6 @@ section {
     min-height: 700px;
 }
 
-/* Header with title + CV link */
 .education-header {
     display: flex;
     justify-content: space-between;
@@ -189,17 +178,12 @@ section {
     border-bottom-color: #e45e00;
 }
 
-/* Two-column layout */
 .education-layout {
     display: flex;
     gap: 40px;
     max-width: 1100px;
     margin: auto;
 }
-
-/* ======================
-   LEFT COLUMN — ENTRIES
-   ====================== */
 
 .education-left {
     flex: 1;
@@ -218,13 +202,15 @@ section {
     object-fit: contain;
     display: block;
 }
+
 .edu-logo-ubc {
-    height: 120px;        
+    height: 120px;
     width: auto;
     object-fit: contain;
     display: block;
-    margin-left: -25px;     
+    margin-left: -25px;
 }
+
 .edu-details h2 {
     font-size: 24px;
     margin-bottom: 5px;
@@ -241,10 +227,6 @@ section {
     color: #555;
 }
 
-/* ======================
-   RIGHT COLUMN — PDF CV
-   ====================== */
-
 .education-right {
     flex: 1;
     display: flex;
@@ -259,23 +241,19 @@ section {
     position: relative;
 }
 
-/* ORANGE BLOB BEHIND PDF */
 .cv-blob {
     position: absolute;
     top: -40px;
     left: -40px;
     right: -40px;
     bottom: -40px;
-
     background: var(--accent);
     border-radius: 30px;
     filter: blur(28px);
     opacity: 0.32;
-
-    z-index: 1;  /* behind PDF */
+    z-index: 1;
 }
 
-/* PDF viewer */
 .cv-viewer {
     width: 100%;
     height: 620px;
@@ -283,15 +261,11 @@ section {
     border-radius: 12px;
     background: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-
     position: relative;
-    z-index: 2; /* above blob */
+    z-index: 2;
 }
 
-
-/* -------------------------------- */
-/* EXPERIENCE */
-/* -------------------------------- */
+/* -------------------- EXPERIENCE SECTION -------------------- */
 
 #experience {
     min-height: 700px;
@@ -303,7 +277,7 @@ section {
     color: var(--black);
     padding-left: 16px;
     z-index: 2;
-    position: relative
+    position: relative;
 }
 
 .experience-blob {
@@ -356,36 +330,33 @@ section {
 
 #interests {
     background-color: #EFE8D7;
-    padding-top: 10px;     /* ↓ reduced so nav scrolls to right position */
+    padding-top: 10px;
     padding-bottom: 80px;
     position: relative;
 }
 
 .interests-heading {
-    margin-top: 0;       
-    margin-bottom: 30px;   
-    padding-left: 16px;    
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 16px;
     font-size: 40px;
     color: var(--black);
     position: relative;
-    z-index: 3;            /* stays ABOVE the orange blob */
+    z-index: 3;
 }
 
 .interests-blob {
     position: absolute;
-    top: 100px;             
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
-
-    width: 90%;              
-    height: 200px;         
-    
+    width: 90%;
+    height: 200px;
     background: var(--accent);
-    opacity: 0.75;         
+    opacity: 0.75;
     filter: blur(55px);
-
     border-radius: 50% / 80%;
-    z-index: 0;             
+    z-index: 0;
 }
 
 .interests-grid {
@@ -394,7 +365,7 @@ section {
     flex-wrap: wrap;
     padding-right: 30px;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .interest-card {
@@ -405,7 +376,7 @@ section {
     flex: 1 1 calc(33.333% - 30px);
     max-width: calc(33.333% - 30px);
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 /* -------------------- CAT CAROUSEL -------------------- */
@@ -432,23 +403,15 @@ section {
     border-radius: 10px;
 }
 
-/* hide radio buttons */
-input[name="cat"] {
-  display: none;
-}
+input[name="cat"] { display: none; }
 
-/* hide all arrow sets by default */
-.cat-buttons > div {
-    display: none;
-}
+.cat-buttons > div { display: none; }
 
-/* show correct arrows for each slide */
 #cat-1:checked ~ .cat-carousel .cat-buttons #nav1 { display: flex; }
 #cat-2:checked ~ .cat-carousel .cat-buttons #nav2 { display: flex; }
 #cat-3:checked ~ .cat-carousel .cat-buttons #nav3 { display: flex; }
 #cat-4:checked ~ .cat-carousel .cat-buttons #nav4 { display: flex; }
 
-/* arrow styling */
 .cat-btn {
     background: black;
     color: white;
@@ -465,7 +428,6 @@ input[name="cat"] {
     transform: scale(1.08);
 }
 
-/* arrow placement */
 .cat-buttons > div {
     position: absolute;
     right: 10px;
@@ -474,13 +436,12 @@ input[name="cat"] {
     flex-direction: column;
 }
 
-/* slide movement */
 #cat-1:checked ~ .cat-carousel .cat-carousel-inner { transform: translateY(0); }
 #cat-2:checked ~ .cat-carousel .cat-carousel-inner { transform: translateY(-520px); }
 #cat-3:checked ~ .cat-carousel .cat-carousel-inner { transform: translateY(-1040px); }
 #cat-4:checked ~ .cat-carousel .cat-carousel-inner { transform: translateY(-1560px); }
 
-/* -------------------- HIKING CAROUSEL (RESTORED) -------------------- */
+/* -------------------- HIKING CAROUSEL -------------------- */
 
 #interest-hiking .hiking-carousel {
     width: 100%;
@@ -504,23 +465,15 @@ input[name="cat"] {
     border-radius: 10px;
 }
 
-/* hide radio buttons */
-input[name="hike"] {
-    display: none;
-}
+input[name="hike"] { display: none; }
 
-/* hide all arrow sets */
-.hiking-buttons > div {
-    display: none;
-}
+.hiking-buttons > div { display: none; }
 
-/* show correct arrows */
 #hike-1:checked ~ .hiking-carousel .hiking-buttons #hike-nav1 { display: flex; }
 #hike-2:checked ~ .hiking-carousel .hiking-buttons #hike-nav2 { display: flex; }
 #hike-3:checked ~ .hiking-carousel .hiking-buttons #hike-nav3 { display: flex; }
 #hike-4:checked ~ .hiking-carousel .hiking-buttons #hike-nav4 { display: flex; }
 
-/* arrow styling */
 .hike-btn {
     background: black;
     color: white;
@@ -537,7 +490,6 @@ input[name="hike"] {
     transform: scale(1.08);
 }
 
-/* arrow placement */
 .hiking-buttons > div {
     position: absolute;
     right: 10px;
@@ -546,7 +498,6 @@ input[name="hike"] {
     flex-direction: column;
 }
 
-/* slide movement */
 #hike-1:checked ~ .hiking-carousel .hiking-carousel-inner { transform: translateY(0); }
 #hike-2:checked ~ .hiking-carousel .hiking-carousel-inner { transform: translateY(-520px); }
 #hike-3:checked ~ .hiking-carousel .hiking-carousel-inner { transform: translateY(-1040px); }
@@ -569,10 +520,7 @@ input[name="hike"] {
     box-shadow: 0 4px 12px rgba(0,0,0,0.10);
 }
 
-
-/* -------------------------------- */
-/* CONTACT */
-/* -------------------------------- */
+/* -------------------- CONTACT SECTION -------------------- */
 
 #contact {
     padding-bottom: 80px;
@@ -640,5 +588,6 @@ input[name="hike"] {
     transform: translateY(-2px);
 }
 
-/* -------------------------------- */
+/* -------------------- END -------------------- */
+
 
