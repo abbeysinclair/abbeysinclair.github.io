@@ -691,8 +691,8 @@ input[name="cat"] {
 
 /* Submit button */
 .contact-form button {
-    background: var(--accent);
-    color: white;
+    background: blueviolet;
+    color: rgb(224, 135, 209);
     border: none;
     padding: 12px;
     font-size: 18px;
