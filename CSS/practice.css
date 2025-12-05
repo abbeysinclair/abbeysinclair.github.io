@@ -374,7 +374,7 @@ section {
     transform: translateX(-50%);
 
     width: 90%;              
-    height: 200px;         
+    height: 300px;         
     
     background: var(--accent);
     opacity: 0.75;         
