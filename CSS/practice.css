@@ -349,6 +349,28 @@ section {
 }
 
 /* -------------------- INTERESTS SECTION -------------------- */
+/* Wide horizontal blob behind the entire Interests grid */
+.interests-blob {
+    position: absolute;
+    top: 180px;              /* adjust up/down if needed */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;              /* spans most of the section */
+    height: 180px;           /* thin glow — adjust to taste */
+
+    background: var(--accent);
+    opacity: 0.22;
+    filter: blur(70px);
+
+    border-radius: 60% / 40%;
+    z-index: 0;              /* stays BEHIND all content */
+}
+
+/* Make sure Interests section can position absolute children */
+#interests {
+    position: relative;
+}
 
 #interests {
     padding-bottom: 60px;
