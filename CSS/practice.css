@@ -20,13 +20,11 @@ html {
 body {
     background: linear-gradient(
         to bottom,
-        #FFF7EB 0%,
-        #FAF0DA 25%,
-        #F4E6C5 50%,
-        #EFE0BA 75%,
-        #E9D7A8 100%
+        #FFFEFB 0%,
+        #FAF7F0 40%,
+        #F3EFE6 80%,
+        #ECE7DE 100%
     );
-
     color: var(--text);
     font-family: 'Inter', sans-serif;
 }
