@@ -99,7 +99,7 @@ section {
 .about-title {
     font-size: 42px;
     font-weight: bold;
-    color: var(--black);
+    color: pink;
     margin-bottom: 40px;
     position: relative;
     z-index: 3;
