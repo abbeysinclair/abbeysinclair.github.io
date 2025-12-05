@@ -213,6 +213,13 @@ section {
     object-fit: contain;
     display: block;
 }
+.edu-logo-ubc {
+    height: 105px;        
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: -6px;     
+}
 
 .edu-details h2 {
     font-size: 24px;
