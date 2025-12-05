@@ -234,6 +234,7 @@ section {
 }
 
 .cv-viewer {
+    position:relative
     width: 100%;
     height: 600px;
     border-radius: 12px;
