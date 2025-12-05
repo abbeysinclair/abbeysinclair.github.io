@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 section h1 {
-    border-left: 8px solid var(rgb(68, 191, 115));
+    border-left: 8px solid var(rgb(22, 101, 52));
     padding-left: 16px;
     letter-spacing: 0.5px;
 }
