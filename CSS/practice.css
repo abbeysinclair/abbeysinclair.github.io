@@ -103,7 +103,6 @@ section {
 }
 
 .about-title {
-    border-left: 8px solid green;
     font-size: 42px;
     color: var(--black);
     margin-bottom: 40px;
