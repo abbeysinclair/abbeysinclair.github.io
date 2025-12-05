@@ -1,6 +1,3 @@
-/* -------------------------------- */
-/* RESET + VARIABLES */
-/* -------------------------------- */
 
 * {
     margin: 0;
@@ -37,7 +34,6 @@ h1, h2, h3 {
 section {
     padding-left: 30px;
     margin-top: 70px;
-    padding-top: 120px;
     height: auto;
 }
 
@@ -344,7 +340,7 @@ section {
     max-width: calc(33.333% - 30px);
 }
 
-/* -------------------- CAT CAROUSEL (RESTORED) -------------------- */
+/* -------------------- CAT CAROUSEL -------------------- */
 
 #interest-cat .cat-carousel {
     width: 100%;
