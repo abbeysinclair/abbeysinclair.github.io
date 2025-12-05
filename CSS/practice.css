@@ -350,36 +350,37 @@ section {
 
 /* -------------------- INTERESTS SECTION -------------------- */
 
-/* Make sure Interests section can position absolute children */
+
 #interests {
-    position: relative;          /* needed for absolute blob */
-    background-color: transparent;  /* let the gradient show */
-    padding-top: 80px;           /* space above cards/title */
-    padding-bottom: 120px;       /* extra space at bottom */
+    position: relative;          
+    background-color: transparent;  
+    padding-top: 80px;        
+    padding-bottom: 120px;       
 }
 .interests-blob {
     position: absolute;
-    top: 160px;              /* move up/down as needed */
+    top: 160px;             
     left: 50%;
     transform: translateX(-50%);
 
-    width: 90%;              /* long horizontal band */
-    height: 120px;           /* thin-ish */
+    width: 90%;              
+    height: 120px;         
     
     background: var(--accent);
-    opacity: 0.45;           /* fairly visible for now */
+    opacity: 0.45;         
     filter: blur(55px);
 
     border-radius: 50% / 80%;
-    z-index: 0;              /* stays behind all cards */
+    z-index: 0;             
 }
-
 
 .interests-grid {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     padding-right: 30px;
+    position: relative;
+    z-index: 2; 
 }
 
 .interest-card {
@@ -389,6 +390,8 @@ section {
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     flex: 1 1 calc(33.333% - 30px);
     max-width: calc(33.333% - 30px);
+    position: relative;
+    z-index: 2; 
 }
 
 /* -------------------- CAT CAROUSEL -------------------- */
