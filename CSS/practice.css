@@ -437,21 +437,24 @@ input[name="cat"] { display: none; }
 
 /* -------------------- HIKING CAROUSEL -------------------- */
 
+/* ---The outer frame of the carousel--- */
 #interest-hiking .hiking-carousel {
     width: 100%;
     height: 520px;
     overflow: hidden;
+    /* ---overflow: hidden, only 1 image shows-- */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     position: relative;
 }
-
+/* ---the inner container that moves up and down--- */
 .hiking-carousel-inner {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* ---^images are stacked vertically--- */
     transition: transform 0.5s ease;
 }
 
+/* ---slide styling, height of the window--- */
 #interest-hiking .hiking-slide {
     width: 100%;
     height: 520px;
@@ -463,6 +466,13 @@ input[name="hike"] { display: none; }
 
 .hiking-buttons > div { display: none; }
 
+
+/* ---When a radio button is checked:
+Slide 1 → translate(0) → show image #1
+Slide 2 → translate(-520px) → the whole stack moves up → image #2 is in view
+Slide 3 → translate(-1040px) (2 × 520) → show image #3
+Slide 4 → translate(-1560px) (3 × 520) → show image #4
+-- */
 #hike-1:checked ~ .hiking-carousel .hiking-buttons #hike-nav1 { display: flex; }
 #hike-2:checked ~ .hiking-carousel .hiking-buttons #hike-nav2 { display: flex; }
 #hike-3:checked ~ .hiking-carousel .hiking-buttons #hike-nav3 { display: flex; }
