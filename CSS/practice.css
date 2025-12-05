@@ -20,15 +20,14 @@ html {
 body {
     background: linear-gradient(
         to bottom,
-        #FCFAF6 0%,
-        #F8F4EE 30%,
-        #F3EFE8 65%,
-        #EEE9E1 100%
+        #FFFEFB 0%,
+        #FAF7F0 40%,
+        #F3EFE6 80%,
+        #ECE7DE 100%
     );
     color: var(--text);
     font-family: 'Inter', sans-serif;
 }
-
 
 
 h1, h2, h3 {
