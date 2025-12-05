@@ -220,15 +220,6 @@ section {
     display: block;
     margin-left: -25px;     
 }
-
-.logo-box {
-    width: 110px;       /* adjust if needed */
-    display: flex;
-    justify-content: center; /* centers each logo inside its box */
-    align-items: flex-start;
-}
-
-
 .edu-details h2 {
     font-size: 24px;
     margin-bottom: 5px;
