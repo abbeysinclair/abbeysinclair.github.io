@@ -29,8 +29,12 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
 
-h1, h2, h3 {
+
+h3 {
     font-family: 'Poppins', sans-serif;
 }
 
