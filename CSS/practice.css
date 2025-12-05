@@ -89,12 +89,6 @@ section {
     min-height: 700px;
 }
 
-#about h1 {
-    font-size: 40px;
-    color: pink;
-    margin-bottom: 20px;
-}
-
 .about-wrapper {
     width: 90%;
     max-width: 1100px;
