@@ -208,13 +208,10 @@ section {
 }
 
 .edu-logo {
-    width: 90px;
+    height: 90px;
+    width: auto;
     object-fit: contain;
-}
-
-.edu-logoubc {
-    width: 120px;
-    object-fit: contain;
+    display: block;
 }
 
 .edu-details h2 {
