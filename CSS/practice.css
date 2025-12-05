@@ -244,7 +244,7 @@ section {
 }
 
 .cv-blob {
-    position: relative;
+    position: absolute;
     top: -40px;
     left: -40px;
     right: -40px;
@@ -253,7 +253,7 @@ section {
     border-radius: 28px;
     filter: blur(24px);
     opacity: 0.35;
-    z-index: 0;
+    z-index: 1;
 }
 
 /* -------------------------------- */
