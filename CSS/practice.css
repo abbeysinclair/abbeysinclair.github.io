@@ -349,32 +349,31 @@ section {
 }
 
 /* -------------------- INTERESTS SECTION -------------------- */
-/* Wide horizontal blob behind the entire Interests grid */
-.interests-blob {
-    position: absolute;
-    top: 180px;              /* adjust up/down if needed */
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 90%;              /* spans most of the section */
-    height: 180px;           /* thin glow — adjust to taste */
-
-    background: var(--accent);
-    opacity: 0.22;
-    filter: blur(70px);
-
-    border-radius: 60% / 40%;
-    z-index: 0;              /* stays BEHIND all content */
-}
 
 /* Make sure Interests section can position absolute children */
 #interests {
-    position: relative;
+    position: relative;          /* needed for absolute blob */
+    background-color: transparent;  /* let the gradient show */
+    padding-top: 80px;           /* space above cards/title */
+    padding-bottom: 120px;       /* extra space at bottom */
+}
+.interests-blob {
+    position: absolute;
+    top: 160px;              /* move up/down as needed */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;              /* long horizontal band */
+    height: 120px;           /* thin-ish */
+    
+    background: var(--accent);
+    opacity: 0.45;           /* fairly visible for now */
+    filter: blur(55px);
+
+    border-radius: 50% / 80%;
+    z-index: 0;              /* stays behind all cards */
 }
 
-#interests {
-    padding-bottom: 60px;
-}
 
 .interests-grid {
     display: flex;
