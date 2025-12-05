@@ -391,7 +391,7 @@ section {
 #interests {
     background-color: #EFE8D7;
     padding-top: 40px;     /* reduce from huge 120px inherited earlier */
-    padding-bottom: 60px;  /* gives breathing room */
+    padding-bottom: 150px;  /* gives breathing room */
     min-height: auto;      /* let content define height */
 }
 
