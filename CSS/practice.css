@@ -180,7 +180,7 @@ section {
 }
 
 .education-left {
-    flex: 1;
+    flex: 1; /* --Take up an equal share of the available space-- */
 }
 
 .education-entry {
