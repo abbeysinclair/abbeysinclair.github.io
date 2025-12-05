@@ -58,11 +58,11 @@ section {
     height: 70px;
     background-color: var(--black);
     color: var(--bg);
-    display: flex;
+    display: flex; /* ---automatically adjusts when things grow, shrink, or the screen changes size.--- */
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
-    position: fixed;
+    position: fixed; /* ---it stays stuck in the same spot on the screen even when you scroll--- */
     top: 0;
     left: 0;
     right: 0;
@@ -93,7 +93,7 @@ section {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    position: relative;
+    position: relative; /* --It stays in place but can be nudged without affecting others.-- */
 }
 
 .about-title {
@@ -125,7 +125,7 @@ section {
 }
 
 .orange-accent-blob {
-    position: absolute;
+    position: absolute; /* ---It goes exactly where you place it and doesn’t follow the usual layout rules--- */
     top: -80px;
     left: -120px;
     width: 350px;
