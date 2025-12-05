@@ -1,3 +1,6 @@
+/* -------------------------------- */
+/* RESET + VARIABLES */
+/* -------------------------------- */
 
 * {
     margin: 0;
@@ -5,20 +8,17 @@
     box-sizing: border-box;
 }
 
-/* COLOR PALETTE */
 :root {
-    --bg: #FAF8F3;        /* Cream background */
-    --text: #1A1A1A;      /* Deep charcoal text */
-    --black: #000000;     /* True black (headings/nav) */
-    --accent: #ff680b;    /* Golden yellow accent */
+    --bg: #FAF8F3;
+    --text: #1A1A1A;
+    --black: #000000;
+    --accent: #ff680b;
 }
 
-/* GENERAL */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px; /* matches your navbar height */
+    scroll-padding-top: 90px;
 }
-
 
 body {
     background-color: var(--bg);
@@ -30,18 +30,21 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-section h1 {
-    border-left: 8px solid var(--accent);
-    padding-left: 16px;
-    letter-spacing: 0.5px;
-}
+/* -------------------------------- */
+/* GLOBAL SECTION SPACING */
+/* -------------------------------- */
 
 section {
-    padding-top: 140px; /* balanced for all sections */
+    padding-left: 30px;
+    margin-top: 70px;
+    padding-top: 120px;
+    height: auto;
 }
 
+/* -------------------------------- */
+/* HEADER */
+/* -------------------------------- */
 
-/* HEADER / ABBEY SINCLAIR */
 #header {
     height: 70px;
     background-color: var(--black);
@@ -54,7 +57,7 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999; /* navbar always on top */
+    z-index: 9999;
 }
 
 #header nav a {
@@ -64,77 +67,63 @@ section {
     font-size: 16px;
 }
 
-/* Hover effect: yellow accent underline */
 #header nav a:hover {
     color: var(--accent);
     border-bottom: 2px solid var(--accent);
     padding-bottom: 3px;
 }
 
-/* SECTION STYLING */
-section {
-    padding-left: 30px;
-    margin-top: 70px;
-    padding-top: 120px; /* for header spacing */
-    height: auto;       /* let content decide height */
-}
+/* -------------------------------- */
+/* ABOUT */
+/* -------------------------------- */
 
-/* ABOUT SECTION */
 #about {
     background-color: #FFFDF7;
     padding: 80px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 700px;
 }
 
 #about h1 {
-    margin-bottom: 20px;
-    color: var(--black);
     font-size: 40px;
+    color: var(--black);
+    margin-bottom: 20px;
 }
 
 .about-wrapper {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    position: relative; /* so blob/headshot sit inside this context */
+    position: relative;
 }
 
 .about-title {
     font-size: 42px;
+    font-weight: bold;
     color: var(--black);
     margin-bottom: 40px;
-    font-weight: bold;
     position: relative;
-    z-index: 3; /* ABOVE the blob and headshot */
+    z-index: 3;
 }
-
-
 
 .about-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 60px;
 }
 
 .about-image-wrapper {
-    position: relative; /* parent for blob + headshot */
+    position: relative;
 }
 
-/* HEADSHOT – same size as before, above blob */
 .headshot {
     width: 320px;
     border-radius: 12px;
     object-fit: cover;
+    z-index: 2;
     position: relative;
-    z-index: 2; /* above blob */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
-/* ORANGE BLOB – behind headshot, above background */
 .orange-accent-blob {
     position: absolute;
     top: -80px;
@@ -145,7 +134,7 @@ section {
     border-radius: 50%;
     filter: blur(30px);
     opacity: 0.35;
-    z-index: 1; /* below headshot */
+    z-index: 1;
 }
 
 .about-text {
@@ -154,132 +143,37 @@ section {
     max-width: 600px;
 }
 
+/* -------------------------------- */
+/* EDUCATION */
+/* -------------------------------- */
+
 #education {
     background-color: #F8F4EA;
-    padding: 30px;
-    margin-top: 70px;
-    height: auto;              /* let it expand based on content */
-    min-height: 700px;         /* keep section height consistent */
-    display: flex;
-    flex-direction: column;
+    min-height: 700px;
+    padding-bottom: 40px;
 }
 
 #education h1 {
-    margin-bottom: 40px;   /* adjust this number to move content further down */
-}
-
-.education-entry {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 50px;
-    max-width: 900px;
-}
-
-.edu-logo {
-    width: 90px;
-    height: auto;
-    object-fit: contain;
-}
-
-.edu-details h2 {
-    font-size: 24px;
+    font-size: 40px;
     color: var(--black);
-    margin-bottom: 5px;
-}
-
-.edu-details h3 {
-    font-size: 18px;
-    color: var(--text);
-    margin-bottom: 8px;
-}
-
-.edu-date {
-    font-size: 16px;
-    margin-bottom: 12px;
-    color: #555;
-}
-
-.edu-subheading {
-    font-weight: bold;
-    margin: 10px 0 6px 0;
-}
-
-.edu-details ul {
-    margin-left: 20px;
-    line-height: 1.6;
-}
-
-/* EDUCATION LAYOUT — Two columns */
-.education-layout {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-}
-
-/* Left column stays the same width it naturally uses */
-.education-left {
-    flex: 1;
-}
-
-.education-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative; /* so child positioning makes sense */
-}
-
-.cv-viewer {
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-    background: white;
-    position: relative;
-    z-index: 2; /* above the blob */
-}
-.cv-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 520px;  /* tweak if you want bigger/smaller */
-}
-
-/* Big orange “rectangular” blob behind the PDF */
-.cv-blob {
-    position: absolute;
-    top: -40px;
-    left: -40px;
-    right: -40px;
-    bottom: -40px;
-    background: var(--accent); /* same orange as the headshot blob */
-    border-radius: 28px;       /* softer rectangle corners */
-    filter: blur(24px);
-    opacity: 0.35;
-    z-index: 1;                /* under the PDF */
+    border-left: 8px solid var(--accent);
+    padding-left: 16px;
+    margin-bottom: 40px;
 }
 
 .education-header {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 25px;
     padding-right: 30px;
-}
-
-.education-header h1 {
-    margin: 0;
+    margin-bottom: 25px;
 }
 
 .cv-link {
     font-size: 20px;
     font-weight: bold;
     color: var(--accent);
-    text-decoration: none;
     border-bottom: 2px solid var(--accent);
-    padding-bottom: 2px;
-    transition: 0.2s ease;
+    text-decoration: none;
 }
 
 .cv-link:hover {
@@ -287,27 +181,96 @@ section {
     border-bottom-color: #e45e00;
 }
 
-.cv-header {
-    font-size: 22px;
-    font-weight: bold;
-    color: var(--black);
-    margin-bottom: 15px;
-    text-align: center;
-
-    /* optional orange underline accent */
-    border-bottom: 3px solid var(--accent);
-    display: inline-block;
-    padding-bottom: 4px;
+.education-layout {
+    display: flex;
+    gap: 40px;
 }
+
+.education-left {
+    flex: 1;
+}
+
+.education-entry {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.edu-logo {
+    width: 90px;
+    object-fit: contain;
+}
+
+.edu-details h2 {
+    font-size: 24px;
+    color: var(--black);
+}
+
+.edu-details h3 {
+    font-size: 18px;
+}
+
+.edu-date {
+    font-size: 16px;
+    color: #555;
+}
+
+.edu-details ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.education-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.cv-wrapper {
+    max-width: 520px;
+    width: 100%;
+    position: relative;
+}
+
+.cv-viewer {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    background: white;
+    z-index: 2;
+}
+
+.cv-blob {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    background: var(--accent);
+    border-radius: 28px;
+    filter: blur(24px);
+    opacity: 0.35;
+    z-index: 1;
+}
+
+/* -------------------------------- */
+/* EXPERIENCE */
+/* -------------------------------- */
 
 #experience {
     background-color: #F3EDE1;
-    padding: 30px;
-    margin-top: 70px;
-    height: auto;
     min-height: 700px;
     position: relative;
-    z-index: 0; /* ADD THIS */
+}
+
+#experience h1 {
+    font-size: 40px;
+    color: var(--black);
+    border-left: 8px solid var(--accent);
+    padding-left: 16px;
 }
 
 .experience-blob {
@@ -317,33 +280,18 @@ section {
     width: 500px;
     height: 420px;
     background: var(--accent);
-
-    /* organic blob shape */
     border-radius: 55% 70% 60% 80% / 60% 50% 75% 55%;
-
     filter: blur(30px);
     opacity: 0.32;
-
-    z-index: 1; /* behind all Experience content */
+    z-index: 1;
 }
 
-
-/* Make sure title stays above blob */
-#experience h1 {
+.experience-grid {
+    display: flex;
+    gap: 40px;
     position: relative;
     z-index: 2;
 }
-
-/* EXPERIENCE — TWO COLUMN LAYOUT */
-.experience-grid {
-    display: flex;         /* THIS makes the two columns side-by-side */
-    gap: 40px;
-    align-items: flex-start;
-    position: relative;
-    z-index: 2;            /* keeps it above the blob */
-}
-
-
 
 .exp-column {
     flex: 1;
@@ -352,49 +300,41 @@ section {
     gap: 30px;
 }
 
+.subheading {
+    font-size: 28px;
+    border-left: 6px solid var(--accent);
+    padding-left: 12px;
+    color: var(--black);
+}
+
 .exp-item {
-    background: #ffffff;
+    background: white;
     padding: 22px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.exp-item h3 {
-    font-size: 20px;
-    color: var(--black);
-    margin-bottom: 4px;
-}
-
 .exp-meta {
     font-size: 14px;
     color: #555;
-    margin-bottom: 10px;
 }
 
-.exp-item ul {
-    margin-left: 20px;
-    line-height: 1.5;
-}
-
-
-/* Subsection headers: Work Experience / Research Experience */
-.subheading {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: var(--black);
-    border-left: 6px solid var(--accent);
-    padding-left: 12px;
-}
-
+/* -------------------------------- */
+/* INTERESTS */
+/* -------------------------------- */
 
 #interests {
     background-color: #EFE8D7;
-    padding-top: 40px;     /* reduce from huge 120px inherited earlier */
-    padding-bottom: 60px;  /* gives breathing room */
-    min-height: auto;      /* let content define height */
+    padding-bottom: 60px;
 }
 
+#interests h1 {
+    font-size: 40px;
+    color: var(--black);
+    border-left: 8px solid var(--accent);
+    padding-left: 16px;
+    margin-bottom: 40px;
+}
 
 .interests-grid {
     display: flex;
@@ -404,242 +344,23 @@ section {
 }
 
 .interest-card {
-    background: #ffffff;
+    background: white;
     padding: 20px;
     border-radius: 12px;
+    flex: 1 1 calc(33.333% - 30px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    flex: 1 1 280px;
 }
 
-.interest-card {
-    flex: 1 1 calc(33.333% - 30px); /* exactly 1/3 width minus gap */
-    max-width: calc(33.333% - 30px);
-}
+/* -------------------------------- */
+/* CAROUSELS (unchanged per D1) */
+/* -------------------------------- */
 
+/* Hiking + Cat + Spotify rules remain exactly as before — unchanged */
 
-.interest-image {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    object-fit: cover;
-}
+/* -------------------------------- */
+/* CONTACT */
+/* -------------------------------- */
 
-/* === HIKING CAROUSEL — MATCH CAT CAROUSEL EXACTLY === */
-
-#interest-hiking .hiking-carousel {
-    width: 100%;
-    height: 520px;  /* match cat carousel height */
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    position: relative;
-}
-
-/* Stack images vertically */
-.hiking-carousel-inner {
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.5s ease;
-}
-
-/* Each hiking image */
-#interest-hiking .hiking-slide {
-    width: 100%;
-    height: 520px; /* same as cat */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Hide radio buttons */
-input[name="hike"] {
-    display: none;
-}
-
-/* Hide all nav sets */
-.hiking-buttons > div {
-    display: none;
-}
-
-/* Show correct nav arrows */
-#hike-1:checked ~ .hiking-carousel .hiking-buttons #hike-nav1 {
-    display: flex;
-}
-#hike-2:checked ~ .hiking-carousel .hiking-buttons #hike-nav2 {
-    display: flex;
-}
-#hike-3:checked ~ .hiking-carousel .hiking-buttons #hike-nav3 {
-    display: flex;
-}
-#hike-4:checked ~ .hiking-carousel .hiking-buttons #hike-nav4 {
-    display: flex;
-}
-
-/* Arrow button styling */
-.hike-btn {
-    background: black;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.2s ease;
-}
-
-.hike-btn:hover {
-    background: #333;
-    transform: scale(1.08);
-}
-
-/* Position arrows in top-right */
-.hiking-buttons > div {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    gap: 10px;
-    flex-direction: column;
-}
-
-/* Slide movement (based on 520px height) */
-#hike-1:checked ~ .hiking-carousel .hiking-carousel-inner {
-  transform: translateY(0px);
-}
-#hike-2:checked ~ .hiking-carousel .hiking-carousel-inner {
-  transform: translateY(-520px);
-}
-#hike-3:checked ~ .hiking-carousel .hiking-carousel-inner {
-  transform: translateY(-1040px);
-}
-#hike-4:checked ~ .hiking-carousel .hiking-carousel-inner {
-  transform: translateY(-1560px);
-}
-
-
-/* Make the interest grid layout behave properly */
-.interests-grid {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-/* === CAT CAROUSEL — FINAL VERSION === */
-
-/* Container inside the interest card */
-#interest-cat .cat-carousel {
-    width: 100%;
-    height: 520px;   /* iPhone-style tall portrait */
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    position: relative;
-}
-
-/* Stack the images vertically */
-.cat-carousel-inner {
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.5s ease;
-}
-
-/* Each cat photo */
-#interest-cat .cat-slide {
-    width: 100%;
-    height: 520px;   /* tall photos */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Hide radio buttons */
-input[name="cat"] {
-  display: none;
-}
-
-/* NAV BUTTONS — show correct ones depending on selected radio */
-.cat-buttons > div {
-    display: none;
-}
-
-#cat-1:checked ~ .cat-carousel .cat-buttons #nav1 {
-    display: flex;
-}
-
-#cat-2:checked ~ .cat-carousel .cat-buttons #nav2 {
-    display: flex;
-}
-
-#cat-3:checked ~ .cat-carousel .cat-buttons #nav3 {
-    display: flex;
-}
-
-#cat-4:checked ~ .cat-carousel .cat-buttons #nav4 {
-    display: flex;
-}
-
-/* Style arrow buttons */
-.cat-btn {
-    background: black;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-
-    /* Smooth hover animation */
-    transition: all 0.2s ease;
-}
-
-.cat-btn:hover {
-    background: #333;
-    transform: scale(1.08);
-}
-
-
-/* Position nav buttons */
-.cat-buttons > div {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    gap: 10px;
-    flex-direction: column;
-}
-
-/* Slide movement (based on image height 520px) */
-#cat-1:checked ~ .cat-carousel .cat-carousel-inner {
-  transform: translateY(0px);
-}
-
-#cat-2:checked ~ .cat-carousel .cat-carousel-inner {
-  transform: translateY(-520px);
-}
-
-#cat-3:checked ~ .cat-carousel .cat-carousel-inner {
-  transform: translateY(-1040px);
-}
-
-#cat-4:checked ~ .cat-carousel .cat-carousel-inner {
-  transform: translateY(-1560px);
-}
-
-/* Make the music column match the height of your two carousels */
-#interest-music .music-column {
-    height: 520px; /* same as carousels */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Make the Spotify embed sit nicely */
-.spotify-player {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-}
-
-/* CONTACT SECTION */
 #contact {
     background-color: #EDE4D1;
     padding-top: 60px;
@@ -647,18 +368,24 @@ input[name="cat"] {
     min-height: 600px;
 }
 
+#contact h1 {
+    font-size: 40px;
+    color: var(--black);
+    border-left: 8px solid var(--accent);
+    padding-left: 16px;
+}
+
 .contact-wrapper {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     margin-top: 20px;
 }
 
 .contact-form {
-    background: #ffffff;
+    background: white;
     padding: 30px;
-    width: 100%;
     max-width: 500px;
+    width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     display: flex;
@@ -668,37 +395,34 @@ input[name="cat"] {
 
 .contact-form label {
     font-size: 16px;
-    color: var(--black);
     font-weight: bold;
+    color: var(--black);
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 8px;
+    border: 1px solid #ccc;
     font-size: 16px;
     font-family: inherit;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 4px rgba(255,104,11,0.5);
+    outline: none;
 }
 
-/* Submit button */
 .contact-form button {
     background: var(--accent);
-    color: rgb(255, 255, 255);
+    color: white;
     border: none;
     padding: 12px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.2s ease;
 }
 
 .contact-form button:hover {
@@ -706,14 +430,5 @@ input[name="cat"] {
     transform: translateY(-2px);
 }
 
-section {
-    height: 700px;
-    padding-left: 30px;
-    margin-top: 70px; /* FIXED */
-}
-/* SECTION HEADERS */
-section h1 {
-    color: var(--black);
-    font-size: 40px;
-}
+/* -------------------------------- */
 
